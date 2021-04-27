@@ -1,11 +1,14 @@
 import unittest
+
 # given a scale and 9 gold bar and exact looks
 # bars = number of bars needed to weigh to find the fake.
 # start = starting gold to measure
 # end = ending gold to measure
 def findFake(bars, start, end):
+    # Base case
     if (end - start) == 0:
         return start + 1
+
     odd_bar = -1 
     # if bars is odd numbers, there are 9 gold bars to weigh.
     # keep track of one of the gold bar
